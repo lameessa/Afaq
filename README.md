@@ -1,9 +1,9 @@
 # Afaq - آفاق
 
-Afaq is a data science project developed to support tourism in Saudi Arabia by analyzing engagement with landscape and destination photos.
+Afaq is designed to promote tourism in Saudi Arabia by analyzing engagement with photos. The project uses Flickr's API to collect relevant images and their associated data.
 
-The project uses Flickr's API to collect images and their associated engagement data, then analyzes the images to identify visual features that may contribute to higher engagement. The goal is to better understand what captures viewers' attention and use these insights to support the promotion of Saudi destinations.
+The images are then analyzed to identify visual features that contribute to higher engagement, helping us understand what captures viewers' attention. Data collection began on January 25, 2025, and continues to capture seasonal trends and evolving viewer preferences.
 
-Developed at King Saud University (KSU), Riyadh, Saudi Arabia (SA).
+**Developed at King Saud University (KSU), Riyadh, Saudi Arabia (SA).**
 
-🏆 **1st Place – KSU IT Fair**
+🏆 **1st Place at the KSU IT Fair**
