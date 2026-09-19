@@ -1,8 +1,8 @@
 # Afaq | آفاق
 
-Afaq is a data science and machine learning project that explores tourism engagement across Saudi Arabia through publicly available Flickr photos.
+Afaq is a data science and machine learning project that analyzes **Saudi landscape photos** to explore the factors associated with higher online engagement and identify destinations that may deserve greater visibility.
 
-The project analyzes photo engagement, visual content, geographic regions, seasons, time of day, and audience sentiment to uncover patterns in how Saudi destinations are represented and received online.
+Using public images and metadata collected through the Flickr API, the project combines data analysis, computer vision, natural language processing, and machine learning to uncover patterns across Saudi regions, seasons, visual elements, and audience engagement.
 
 **Developed at King Saud University (KSU), Riyadh, Saudi Arabia (SA).**
 
@@ -10,107 +10,72 @@ The project analyzes photo engagement, visual content, geographic regions, seaso
 
 ---
 
-## About Afaq
+## About the Project
 
 Afaq was developed to explore how data can support tourism promotion in Saudi Arabia.
 
-Using tourism-related photos collected through the Flickr API, we analyzed engagement metrics alongside visual and contextual characteristics to understand what contributes to photo popularity and how engagement differs across regions.
+The project analyzes Saudi landscape photos and their engagement data to investigate how factors such as geographic region, season, time of day, visual content, and audience sentiment relate to photo popularity.
 
-The project covers the five regions of Saudi Arabia — North, South, Central, East, and West — and combines data analysis, computer vision, natural language processing, and machine learning.
-
----
-
-## Project Workflow
-
-### 1. Data Collection
-
-Public photo data was collected through the **Flickr API**, including:
-
-- Views
-- Favorites
-- Comments
-- Upload dates
-- Photo locations
-- Images and their metadata
-
-The data collection process began on **January 25, 2025**.
-
-### 2. Image & Text Analysis
-
-The collected data was enriched using several AI and computer vision techniques:
-
-- **CLIP** was used to classify landscape types and identify visual elements within each image.
-- **OpenCV** was used to classify photos as day or night based on image brightness.
-- **Hugging Face Transformers** were used to perform sentiment analysis on photo comments.
-
-Visual elements included features such as mountains, buildings, trees, water, sand, roads, rocks, and mosques.
-
-### 3. Popularity Analysis
-
-A **Popularity Score** was created to measure photo engagement using favorites, comments, normalized views, and sentiment.
-
-Exploratory data analysis was then used to examine differences in popularity across:
-
-- Saudi regions
-- Seasons
-- Time of day
-- Landscape types
-- Visual elements
-- Engagement patterns over time
-
-### 4. Machine Learning
-
-The processed data was split into **80% training and 20% testing data**.
-
-Three regression models were evaluated:
-
-- Linear Regression
-- Random Forest Regressor
-- Support Vector Regressor (SVR)
-
-The **Random Forest Regressor** achieved the strongest performance with an **R² of approximately 0.93**, compared with approximately **0.88** for Linear Regression, while SVR produced a negative R².
+The analysis covers five regions of Saudi Arabia: **Central, West, North, South, and East**.
 
 ---
 
-## Key Insights
+## Methodology
 
-The analysis revealed several patterns in the collected Flickr data:
+The project follows an end-to-end data science workflow:
 
-- The **Eastern region** achieved the highest overall Popularity Score, followed by the Northern region.
-- The **Southern region** had the lowest overall engagement in the dataset, highlighting an opportunity for greater visibility and further analysis.
-- **Autumn** showed particularly strong engagement across several regions, while the South showed its strongest engagement during spring.
-- **Daytime photos** generally performed better, although nighttime photos showed stronger engagement in the Western region.
-- Visual elements such as **sand, roads, and rocks** were associated with higher average Popularity Scores.
-- Engagement patterns and the types of landscapes represented differed considerably across Saudi regions.
+1. **Data Collection**  
+   Public Saudi landscape photos and their metadata were collected using the **Flickr API**, including views, favorites, comments, and upload information.
 
-These findings reflect patterns within the collected Flickr dataset and may not represent tourism activity as a whole.
+2. **Image & Text Analysis**
+   - **CLIP** was used to classify landscape types and detect visual elements.
+   - **OpenCV** was used to classify images as day or night based on brightness.
+   - **Hugging Face Transformers** were used for sentiment analysis of photo comments.
+
+3. **Data Analysis**  
+   Engagement patterns were explored across regions, seasons, time of day, landscape types, and visual elements.
+
+4. **Machine Learning**  
+   Linear Regression, Random Forest Regressor, and Support Vector Regressor (SVR) were evaluated to predict a custom **Popularity Score**.
+
+The project collected **200 Saudi landscape images**, with **199 retained in the final processed dataset across 33 features**.
+
+---
+
+## Model Performance
+
+The **Random Forest Regressor** achieved the strongest performance:
+
+- **R² Score:** 0.9288
+- **RMSE:** 576.70
+
+The model explained approximately **93% of the variance in Popularity Score** within the project dataset.
+
+---
+
+## Key Findings
+
+- The **East** had the highest overall Popularity Score, followed by the **North**.
+- The **South** showed the lowest overall engagement in the collected dataset.
+- **Autumn** emerged as a high-engagement season across multiple regions.
+- **Daytime photos** generally showed higher average popularity.
+- **Sand, roads, and rocks** were among the visual elements associated with higher average Popularity Scores.
+- Engagement and landscape patterns varied across Saudi regions.
 
 ---
 
 ## Technologies & Tools
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- OpenCV
-- OpenAI CLIP
-- Hugging Face Transformers
-- Flickr API
-- Matplotlib
-- Seaborn
-- Google Colab
+`Python` · `Pandas` · `NumPy` · `Scikit-learn` · `OpenCV` · `CLIP` · `Hugging Face Transformers` · `Flickr API` · `Matplotlib` · `Seaborn` · `Google Colab`
 
 ---
 
 ## Repository Contents
 
-This repository contains the main materials produced for Afaq:
-
-- **Afaq Notebook** — data collection, preprocessing, analysis, visualizations, and machine learning
-- **Project Report** — full documentation of the project and findings
-- **Project Poster** — visual summary of Afaq
-- **Project Presentation** — presentation of the project, methodology, and results
+- **Afaq-Notebook.ipynb** — Data collection, preprocessing, analysis, visualizations, and machine learning
+- **Afaq-Report.pdf** — Full project methodology, results, and discussion
+- **Afaq-Poster.pdf** — Visual overview of the project
+- **Afaq-Presentation.pdf** — Project presentation and findings
 
 ---
 
@@ -129,6 +94,9 @@ This repository contains the main materials produced for Afaq:
 ## Affiliation
 
 **King Saud University (KSU)**  
+College of Computer and Information Sciences  
+Department of Information Technology  
 Riyadh, Saudi Arabia (SA)
 
 Developed as part of **IT362 – Data Science**.
+
