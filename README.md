@@ -1,7 +1,9 @@
-# Afaq – Unveiling Saudi Arabia's Hidden Gems Through Data
+# Afaq - آفاق
 
-Afaq (آفاق) is a data science and machine learning project developed at King Saud University (KSU), Riyadh, Saudi Arabia (SA), as part of the IT362 – Data Science course.
+Afaq is a data science project developed to support tourism in Saudi Arabia by analyzing engagement with landscape and destination photos.
 
-The project explores underappreciated tourist destinations across Saudi Arabia by analyzing public photo data from Flickr. Using machine learning and data analytics, Afaq identifies hidden gems, seasonal trends, and visual features associated with destination engagement.
+The project uses Flickr's API to collect images and their associated engagement data, then analyzes the images to identify visual features that may contribute to higher engagement. The goal is to better understand what captures viewers' attention and use these insights to support the promotion of Saudi destinations.
+
+Developed at King Saud University (KSU), Riyadh, Saudi Arabia (SA).
 
 🏆 **1st Place – KSU IT Fair**
